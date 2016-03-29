@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "async": "^1.5.2",
+    "body-parser": "^1.15.0",
     "electron-prebuilt": "^0.36.7",
     "express": "^4.13.4",
     "morgan": "^1.6.1",

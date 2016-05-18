@@ -19,7 +19,7 @@ morgan.token('key-label', req => req.keyLabel);
 app.use(morgan(`[:date[iso]] :key-label@:remote-addr - :method :status
  :url :res[content-length] ":user-agent" :response-time ms`.replace('\n', '')));
 
-app.use(bodyParser.json()); // for parsing application/json
+app.use(bodyParser.json({ limit: '20mb' })); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: false })); // for parsing application/x-www-form-urlencoded
 
 app.disable('x-powered-by');

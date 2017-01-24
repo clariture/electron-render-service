@@ -30,7 +30,7 @@
   "dependencies": {
     "async": "^1.5.2",
     "body-parser": "^1.15.0",
-    "electron-prebuilt": "^1.3.6",
+    "electron@beta": "*",
     "express": "^4.13.4",
     "morgan": "^1.6.1",
     "response-time": "^2.3.1"
